@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator">
+            <div class="Result">
+                <input type="text" id="result">
+            </div>
+
+            <div class="One">
+                <button class="section1" onclick={sevenHandler()} id="seven">7</button>
+                <button class="section1" onclick={eightHandler()} id="eight">8</button>
+                <button class="section1" onclick={nineHandler()} id="nine">9</button>
+                <button class="section1" onclick={delHandler()} id="del">DEL</button>
+            </div>
+            <div class="Two">
+                <button class="section2" onclick={fourHandler()} id="four">4</button>
+                <button class="section2" onclick={fiveHandler()} id="five">5</button>
+                <button class="section2" onclick={sixHandler()} id="six">6</button>
+                <button class="section2" onclick={addHandler()} id="add">+</button>
+            </div>
+            <div class="Three">
+                <button class="section3" onclick={oneHandler()} id="one">1</button>
+                <button class="section3" onclick={twoHandler()} id="two">2</button>
+                <button class="section3" onclick={threeHandler()} id="three">3</button>
+                <button class="section3" onclick={minusHandler()} id="minus">-</button>
+            </div>
+            <div class="Four">
+                <button class="section4" onclick={pointHandler()} id="point">.</button>
+                <button class="section4" onclick={zeroHandler()} id="zero">0</button>
+                <button class="section4" onclick={divideHandler()} id="divide">/</button>
+                <button class="section4" onclick={multiplyHandler()} id="multiply">*</button>
+            </div>
+            <div class="Five">
+                <button class="section5" onclick={resetHandler()} id="reset">RESET</button>
+                <button class="section6" onclick={equalHandler()} id="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
